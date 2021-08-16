@@ -1,0 +1,55 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.5/build/pure-min.css"  crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+
+<body>
+
+    <!-- ================ GET CTC ================ -->
+
+    <form class="pure-form">
+
+            <legend>Enter Your Yearly CTC</legend>
+            <input type="number" placeholder="Total CTC" value="1000000" id="ctc"/>
+
+            <legend>Of which bonus = 10% </legend>
+            <input type="number" placeholder="Total CTC" value="100000" id="bonus"/>
+
+            <legend>and Retirals (including Gratuity) are: </legend>
+            <input type="number" placeholder="Total CTC" value="50000" id="retirals"/>
+
+            <legend>Your Company also charges for your Pf which is </legend>
+            <input type="number" placeholder="Total CTC" value="50000" id="retirals"/>
+    </form>
+
+    <p> So effectively your Salary is = <output id="totsal">20</output></p>
+
+    <!-- ================ GET BASE SALARY ================ -->
+    
+    <div>
+        <legend>What % of your CTC is the Base salary (Generally within 40%-50%)</legend>
+        <input type="range" min="1" max="100" value="40" id="sliderRange" oninput="outputUpdate(value)">
+        <output for="sliderRange" id="basesalperc">40</output>% 
+        <p> So, your Base Salary becomes INR <output for="sliderRange" id="basesal">4,00,000</output></p> 
+        <p> And your additional component becomes <output id="additional"</output></p> 
+
+    </div>
+    
+    <script>
+
+    </script>
+
+
+
+</body>
+
+<script src="script.js"></script>
+
+
+</html>
